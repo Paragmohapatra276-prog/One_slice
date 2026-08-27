@@ -2,10 +2,22 @@
   font-family: Inter, 'Segoe UI', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #1e1b1a;
+
+  color: #f5f1e8;
+
   background:
-    radial-gradient(circle at top, rgba(255, 211, 119, 0.18), transparent 20%),
-    linear-gradient(180deg, #fffaf5 0%, #fff3ea 100%);
+    radial-gradient(
+      circle at top,
+      rgba(212, 175, 55, 0.14),
+      transparent 25%
+    ),
+    linear-gradient(
+      135deg,
+      #0b1026 0%,
+      #171338 45%,
+      #24144f 100%
+    );
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -23,6 +35,7 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  background: #0b1026;
 }
 
 img {
