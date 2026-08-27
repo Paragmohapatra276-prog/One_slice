@@ -1,0 +1,648 @@
+.page-shell {
+  width: min(1200px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 22px 0 32px;
+}
+
+.topbar,
+.hero-section,
+.menu-section,
+.features-section,
+.offers-section,
+.about-section,
+.cart-summary,
+.site-footer {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(124, 58, 18, 0.08);
+  box-shadow: 0 22px 60px rgba(60, 28, 10, 0.08);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 28px;
+  border-radius: 24px;
+  position: sticky;
+  top: 18px;
+  z-index: 10;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand img {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.brand-name {
+  display: block;
+  font-size: 1.3rem;
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: #1b120f;
+}
+
+.brand small {
+  color: #7d5f4d;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  color: #513f3a;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+  color: #d7571a;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.login-btn,
+.primary-btn,
+.secondary-btn,
+.pizza-footer button,
+.cart-pill,
+.primary-btn.small-btn {
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-btn {
+  background: #fff4ed;
+  color: #5d2c1d;
+  font-weight: 700;
+  padding: 0.8rem 1.1rem;
+}
+
+.cart-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #ff8a3d, #f35d2d);
+  color: #fff;
+  font-weight: 700;
+  padding: 0.7rem 1rem;
+  box-shadow: 0 18px 30px rgba(243, 93, 45, 0.28);
+}
+
+.cart-pill b {
+  background: rgba(255, 255, 255, 0.2);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.primary-btn,
+.secondary-btn,
+.pizza-footer button,
+.primary-btn.small-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0.95rem 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.primary-btn,
+.pizza-footer button,
+.primary-btn.small-btn {
+  background: linear-gradient(135deg, #ff8c24, #f0522a);
+  color: #fff;
+  box-shadow: 0 18px 30px rgba(240, 82, 42, 0.23);
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.7);
+  color: #3a2a27;
+  border: 1px solid rgba(103, 61, 45, 0.12);
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  align-items: center;
+  gap: 40px;
+  padding: 42px 38px;
+  border-radius: 32px;
+  margin-top: 28px;
+}
+
+.hero-copy {
+  padding: 22px 6px;
+}
+
+.eyebrow {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #d7571a;
+}
+
+.hero-copy h1,
+.section-heading h2,
+.about-copy h2 {
+  margin: 0;
+  color: #1d1413;
+  line-height: 1.02;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  letter-spacing: -0.06em;
+  max-width: 560px;
+}
+
+.hero-copy p,
+.about-copy p,
+.pizza-info p,
+.feature-card p,
+.offer-card p {
+  color: #604f47;
+  line-height: 1.7;
+  font-size: 1.03rem;
+}
+
+.hero-copy p {
+  margin-top: 18px;
+  max-width: 540px;
+}
+
+.cta-row {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-stats {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.hero-stats div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 120px;
+}
+
+.hero-stats strong,
+.about-section strong,
+.stats-panel strong {
+  color: #1d1413;
+  font-size: 1.4rem;
+}
+
+.hero-stats span,
+.stats-panel span {
+  color: #695b54;
+  font-size: 0.9rem;
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 500px;
+  display: grid;
+  place-items: center;
+}
+
+.pizza-visual-card {
+  position: relative;
+  width: min(100%, 520px);
+  aspect-ratio: 1 / 1;
+  border-radius: 32px;
+  background: linear-gradient(135deg, rgba(255, 199, 108, 0.2), rgba(255, 92, 65, 0.12));
+  box-shadow: inset 0 0 0 1px rgba(132, 62, 35, 0.08), 0 30px 70px rgba(102, 58, 37, 0.18);
+  overflow: hidden;
+}
+
+.pizza-glow {
+  position: absolute;
+  inset: 12% 8% 12% 8%;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, rgba(255, 196, 87, 0.4), rgba(238, 120, 72, 0.15), transparent 68%);
+}
+
+.pizza-visual-card img {
+  position: absolute;
+  inset: 8% 10% 10% 10%;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 28px 50px rgba(13, 7, 7, 0.2);
+}
+
+.floating-card {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(123, 78, 57, 0.08);
+  box-shadow: 0 18px 30px rgba(71, 43, 29, 0.12);
+  padding: 0.9rem 1rem;
+  border-radius: 18px;
+  backdrop-filter: blur(8px);
+}
+
+.floating-card strong {
+  display: block;
+  color: #1d1413;
+}
+
+.floating-card small {
+  color: #695b54;
+}
+
+.top-card {
+  left: -10px;
+  bottom: 70px;
+}
+
+.price-card {
+  right: 18px;
+  top: 34px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.8rem 1.1rem;
+}
+
+.menu-section,
+.features-section,
+.offers-section {
+  margin-top: 26px;
+  padding: 30px 28px 28px;
+  border-radius: 28px;
+}
+
+.section-heading {
+  margin-bottom: 24px;
+}
+
+.section-heading.centered {
+  text-align: center;
+}
+
+.section-heading h2,
+.about-copy h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.06em;
+}
+
+.pizza-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.pizza-card {
+  background: #fff9f5;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(90, 62, 48, 0.08);
+  box-shadow: 0 14px 30px rgba(84, 53, 33, 0.06);
+}
+
+.image-wrap {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pizza-badge {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  background: rgba(255, 255, 255, 0.82);
+  color: #7c3818;
+  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.pizza-info {
+  padding: 20px 18px 18px;
+}
+
+.pizza-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.pizza-header h3,
+.feature-card h3,
+.offer-card h3,
+.cart-summary h3 {
+  margin: 0;
+  color: #1e1512;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #fff4ea;
+  color: #df6909;
+  padding: 0.4rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.pizza-info p {
+  margin-top: 12px;
+  min-height: 76px;
+}
+
+.pizza-footer {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.pizza-footer strong {
+  color: #1d1413;
+  font-size: 1.5rem;
+}
+
+.pizza-footer button {
+  padding: 0.72rem 1rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.feature-card {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 246, 241, 0.9));
+  border: 1px solid rgba(119, 76, 57, 0.08);
+  border-radius: 22px;
+  padding: 22px 18px;
+}
+
+.feature-icon {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #fff2de, #ffe2cf);
+  color: #d25a24;
+  margin-bottom: 14px;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.offers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.offer-card {
+  position: relative;
+  padding: 24px 20px;
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(255, 231, 202, 0.9), rgba(255, 244, 237, 0.9));
+  border: 1px solid rgba(126, 77, 52, 0.08);
+}
+
+.offer-badge {
+  display: inline-flex;
+  padding: 0.45rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  color: #d34e1c;
+  font-size: 0.7rem;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.offer-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.about-section {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 24px;
+  padding: 30px 28px;
+  border-radius: 28px;
+}
+
+.about-copy p {
+  margin-top: 18px;
+}
+
+.stats-panel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  align-self: center;
+}
+
+.stats-panel div {
+  background: linear-gradient(135deg, rgba(255, 244, 239, 0.9), rgba(255, 247, 234, 0.7));
+  border-radius: 18px;
+  padding: 18px 16px;
+  text-align: center;
+}
+
+.stats-panel div strong,
+.stats-panel div span {
+  display: block;
+}
+
+.cart-summary {
+  margin-top: 26px;
+  padding: 22px 28px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.site-footer {
+  margin-top: 26px;
+  border-radius: 24px;
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.footer-brand {
+  gap: 10px;
+}
+
+.site-footer p {
+  color: #5b4d46;
+  font-weight: 600;
+}
+
+.login-btn:hover,
+.primary-btn:hover,
+.secondary-btn:hover,
+.pizza-footer button:hover,
+.cart-pill:hover,
+.primary-btn.small-btn:hover {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 980px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .main-nav {
+    justify-content: flex-start;
+  }
+
+  .hero-section,
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+
+  .pizza-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .offers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    width: min(100% - 20px, 1200px);
+    padding-top: 14px;
+  }
+
+  .topbar,
+  .hero-section,
+  .menu-section,
+  .features-section,
+  .offers-section,
+  .about-section,
+  .cart-summary,
+  .site-footer {
+    border-radius: 20px;
+  }
+
+  .topbar,
+  .hero-section,
+  .menu-section,
+  .features-section,
+  .offers-section,
+  .about-section,
+  .cart-summary,
+  .site-footer {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .hero-section {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  .main-nav {
+    gap: 14px 20px;
+  }
+
+  .nav-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .pizza-grid,
+  .feature-grid,
+  .stats-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-visual {
+    min-height: 360px;
+  }
+
+  .top-card {
+    left: 6px;
+    bottom: 28px;
+  }
+
+  .price-card {
+    right: 8px;
+    top: 10px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
