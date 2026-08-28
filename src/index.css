@@ -2,14 +2,30 @@
   font-family: Inter, 'Segoe UI', sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color: #1e1b1a;
+  color: #dfeeff;
   background:
-    radial-gradient(circle at top, rgba(255, 211, 119, 0.18), transparent 20%),
-    linear-gradient(180deg, #fffaf5 0%, #fff3ea 100%);
+    radial-gradient(circle at top, rgba(59, 130, 246, 0.32), transparent 18%),
+    radial-gradient(circle at bottom right, rgba(56, 189, 248, 0.18), transparent 20%),
+    linear-gradient(180deg, #071827 0%, #0d1f36 28%, #112843 100%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --bg-page: #071827;
+  --bg-panel: rgba(12, 23, 38, 0.72);
+  --bg-panel-strong: rgba(13, 27, 48, 0.94);
+  --bg-card: rgba(255, 255, 255, 0.82);
+  --bg-card-strong: rgba(244, 248, 255, 0.96);
+  --border-soft: rgba(147, 197, 253, 0.18);
+  --primary: #2d7ef7;
+  --primary-strong: #1559d7;
+  --primary-soft: #dfeeff;
+  --secondary: #86d7ff;
+  --text-strong: #eff8ff;
+  --text-main: #dfeaf8;
+  --text-muted: #9db6d8;
+  --shadow-strong: rgba(18, 33, 58, 0.32);
+  --shadow-soft: rgba(13, 56, 120, 0.18);
 }
 
 * {
@@ -23,6 +39,8 @@ html {
 body {
   margin: 0;
   min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg-page);
 }
 
 img {
@@ -53,4 +71,9 @@ h2,
 h3,
 p {
   margin: 0;
+}
+
+::selection {
+  background: rgba(98, 169, 255, 0.32);
+  color: #f5fbff;
 }
